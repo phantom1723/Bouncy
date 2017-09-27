@@ -1,0 +1,69 @@
+.contactUs {
+  background-color: #f3f3f3;
+
+  .contactUs-wrapper {
+    margin: 0 auto;
+    padding: 2em 0;
+    max-width: 1024px;
+
+    h2 {
+      color: #333b46;
+      font-size: 1.5em;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      margin: 1em 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .contactUs-upper-p {
+      color: #6c7077;
+      font-size: 1.1em;
+      margin: 1em auto;
+      max-width: 30em;
+      text-align: center;
+    }
+
+    .kinds-of-contacts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 3em 0;
+
+      .one-kind-of-contacts {
+        background-color: white;
+        margin: 1em;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover .fa {
+          display: none;
+        }
+
+        .fa {
+          color: #f3f3f3;
+          font-size: 3em;
+          margin-left: -0.5em;
+          position: absolute;
+          top: 1em;
+
+        }
+
+        h3 {
+          color: #464646;
+          font-weight: 400;
+          padding: 1em;
+        }
+
+        p {
+          color: #81868e;
+          padding: 0 1em 1em 1em;
+
+        }
+      }
+
+    }
+
+  }
+}

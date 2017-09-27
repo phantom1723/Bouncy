@@ -1,0 +1,122 @@
+.prices {
+  background-color: #f3f3f3;
+
+  .prices-wrapper {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 2em 0;
+
+    h2 {
+      color: #333b46;
+      font-size: 1.5em;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      margin: 1em 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .prices-upper-p {
+      color: #9c9fa5;
+      font-size: 1.1em;
+      margin: 1em auto;
+      max-width: 30em;
+      text-align: center;
+    }
+
+    .kinds-of-prices-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 3em 0;
+
+      .kind-of-price-block {
+        position: relative;
+        margin: 1em 0;
+
+        &:hover .kinds-of-price-hover {
+          opacity: 1;
+         top: 0;
+        }
+
+      h3 {
+        background-color: #19bd9a;
+        color: white;
+        font-size: 1.5em;
+        padding: 1em 0.3em;
+        width: 12em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      p {
+        background-color: white;
+        color: #19bd9a;
+        font-family: 'Source Sans Pro Black', sans-serif;
+        font-size: 3em;
+        font-weight: bold;
+        height: 5em;
+        padding-top: 1.5em;
+        position: relative;
+        text-align: center;
+
+        &::after {
+          color: #81868e;
+          content: "Per Month";
+          display: block;
+          font-size: 0.6em;
+          font-weight: 300;
+          letter-spacing: 0.05em;
+        }
+      }
+        .kinds-of-price-hover {
+          cursor: pointer;
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: -9999em;
+          transition: 2s opacity;
+          width: 100%;
+
+          ul {
+            background-color: white;
+            color: #81868e;
+            padding: 1em 0 1em 3em;
+            text-align: left;
+
+            li {
+              padding: 0.5em;
+              transition: 1s margin-left;
+
+              &:hover {
+                background-color: #19bd9a;
+                color: white;
+                margin-left: 0.5em;
+              }
+            }
+          }
+
+          input {
+            background-color: #19bd9a;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            margin: 1.85em 0 0;
+            padding: 1.3em;
+            transition: 1s;
+            width: 100%;
+
+            &:hover {
+              margin-left: 0.5em;
+              margin-right: 0.5em;
+            }
+
+          }
+
+        }
+
+      }
+    }
+  }
+}

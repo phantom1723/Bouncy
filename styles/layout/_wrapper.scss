@@ -1,0 +1,160 @@
+.fa-angle-down {
+  background-color: #19bd9a;
+  border-radius: 50em;
+  font-size: 6em;
+  margin: 3em 0 8em 1em;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.logo {
+  color: #ffffff;
+  display: flex;
+  flex: 1 1 auto;
+  font: 2em Big John;
+  margin-left: 1em;
+  text-transform: uppercase;
+}
+
+.big-wrapper {
+  background: url(../img/hero-bg.jpg) no-repeat;
+  background-size: cover;
+  box-shadow: 10000px 10000px 0 128px rgba(0, 0, 0, 0.33) inset;
+  overflow: hidden;
+
+  .wrap {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 2em 0;
+
+    header {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+
+
+
+      .svgs {
+        display: none;
+      }
+
+      nav {
+
+        ul {
+          display: flex;
+          flex: 0.3 1 auto;
+          justify-content: space-around;
+
+          a {
+            border: 1px solid transparent;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: 300;
+            padding: 5px 15px; 
+            transition: 1s;
+
+            &:hover {
+              background-color: rgba(82, 87, 75, 1);
+              border: 1px solid #ffffff;
+              border-radius: 20px;
+              padding: 5px 15px;
+            }
+          }
+        }
+      }
+
+    }
+
+    .hero {
+      color: #ffffff;
+      margin: 15em auto 0;
+      max-width: 40em;
+      padding: 0 2em;
+      text-align: center;
+
+      h2 {
+        font-weight: 300;
+        font-size: 2.5em;
+        letter-spacing: 0.3em;
+        margin: 1em 0;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 1.3em;
+        font-weight: 300;
+      }
+
+
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .big-wrapper {
+    background-size: cover;
+    font-size: 0.7em;
+    height: 70%;
+    .wrap {
+      header {
+        .menu {
+          position: relative;
+
+          &:hover nav ul {
+            display: block;
+            opacity: 1;
+            top: 0;
+          }
+        }
+        .svgs {
+          display: block;
+          float: right;
+          margin-right: 3em;
+          overflow: hidden;
+
+          svg {
+            cursor: pointer;
+            display: block;
+            height: 5px;
+            padding: 3px;
+            width: 40px;
+          }
+
+        }
+        nav {
+          ul {
+            margin: 3em 0 0 -3em;
+            opacity: 0;
+            position: absolute;
+            top: -9999em;
+            transition: 0.8s opacity;
+
+            li {
+              margin: 1.5em;
+              transition: margin-left 0.4s linear;
+
+              a {
+                background-color: rgba(82, 87, 75, 0.9);
+                border-radius: 20px;
+                font-size: 1.5em;
+              }
+
+              &:hover {
+                margin-left: -0.5em;
+              }
+            }
+          }
+        }
+      }
+
+      .hero {
+        .fa-angle-down {
+          display: none;
+        }
+      }
+    }
+  }
+}
+

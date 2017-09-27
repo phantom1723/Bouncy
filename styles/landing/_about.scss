@@ -1,0 +1,48 @@
+.about {
+  margin: 2em auto;
+  max-width: 1170px;
+  padding: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #333b46;
+
+
+  .content {
+    max-width: 470px;
+    margin: 0 2em;
+    flex-wrap: wrap;
+
+
+    h2 {
+        text-transform: uppercase;
+        margin: 1em 0;
+        letter-spacing: 0.3em;
+        font-weight: 300;
+        font-size: 1.5em;
+
+    }
+
+    p {
+      line-height: 2em;
+
+    }
+
+    input {
+      background-color: #fff;
+      border: 1px solid #333b46;
+      border-radius: 20px;
+      color: #333b46;
+      font-size: 1.2em;
+      margin: 2em 0;
+      padding: 0.3em 1em;
+
+      &:hover {
+        background-color: #333b46;
+        color: white;
+      }
+    }
+
+  }
+}
