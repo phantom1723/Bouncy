@@ -1,9 +1,3 @@
-.invisible {
-  opacity: 0;
-  position: absolute;
-  left: -9999em;
-}
-
 .portfolio {
   background-color: #f3f3f3;
 
@@ -22,7 +16,7 @@
       text-transform: uppercase;
     }
 
-     p {
+    p {
       color: #9c9fa5;
       font-size: 1.1em;
       margin: 1em auto;
@@ -44,21 +38,21 @@
       }
     }
 
-
-
     .portfolio-images-wrap {
+      align-content: center;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       max-width: 1024px;
 
-
       .portfolio-images {
+        align-content: center;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         transition: 3s;
-
-
+        max-height: 50rem;
       }
 
       img {
@@ -107,3 +101,38 @@
   }
 }
 
+@media screen and (min-width: 758px) and (max-width:1000px) {
+  .portfolio {
+    .portfolio-wrapper {
+      .portfolio-images-wrap {
+        .portfolio-images {
+          max-height: 70em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .portfolio {
+    .portfolio-wrapper {
+      .portfolio-images-wrap {
+        .portfolio-images {
+          max-height: 120em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 526px) {
+  .portfolio {
+    .portfolio-wrapper {
+      .portfolio-images-wrap {
+        .portfolio-images {
+          max-height: 200em;
+        }
+      }
+    }
+  }
+}
